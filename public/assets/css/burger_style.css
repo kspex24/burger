@@ -16,9 +16,27 @@ li {
   .create-update-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    /* width: 30%;
+    margin: auto; */
   }
   
   .form-group {
     margin-bottom: 5px;
+    /* padding-left: 135px; */
   }
+
+ 
+
+  .centertitle {
+    text-align: center;
+    font-family: fantasy;
+  }
+   
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
