@@ -1,8 +1,10 @@
 body {
-  background-color: lightblue;
+  background-color: #eeeeee;
 }
 
-
+h2 {
+  font-family: fantasy;
+}
 li {
     padding: 5px;
     margin: 5px;
@@ -13,30 +15,63 @@ li {
     font-weight: bold;
   }
   
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    /* width: 30%;
-    margin: auto; */
+  .create-form {
+    padding: 25px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .form-group {
-    margin-bottom: 5px;
-    /* padding-left: 135px; */
+    margin-bottom: 15px;
   }
-
- 
 
   .centertitle {
     text-align: center;
     font-family: fantasy;
+    margin-bottom: 10px;
   }
-   
-
-
+  
 .center {
     display: block;
+    align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 15px;
 } 
 
+
+.jumbotron {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  border-bottom: solid 2px;
+  border-bottom-color: rgb(134, 59, 88);
+  border-bottom-style: outset;
+}
+
+#eaten {
+  padding: 10px;
+  float: left;
+  border: solid 2px;
+  box-shadow: 5px 10px #888888;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 45%;
+  right: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#faves {
+  float: left;
+  padding: 10px;
+  border: solid 2px;
+  box-shadow: 5px 10px #888888;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top:45%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
