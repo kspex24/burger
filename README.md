@@ -1,5 +1,7 @@
 # burger project description
 
+https://powerful-island-84872.herokuapp.com/
+
 This is an app that allows users to enter their favorite burgers, then click the devour button to move them from the favorites section to devoured section.
 
 How does it work? The user is presented with a home screen where they can add a burger name to the mysQl database that we created.  When they submit the burger, it is assigned a status of devoured=false value in the data table and is rendered to the favorites section of the page with a devour button next to it.  When the user clicks the devour button, the burger is assigned a devoured=true value and rendered to the Devoured section of the page.
