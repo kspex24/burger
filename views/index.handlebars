@@ -1,36 +1,31 @@
-<div class="container">
-<div class="row">
-  <div class="col-6">
 
-{{!-- <div id="faves"> --}}
+<div id="faves">
 <h2>Favorite Burgers:</h2>
-<ol>
-  {{#each burgers}} 
-  {{#unless devoured}} 
-    {{> burgers/burger-block devoured=true}} 
-  {{/unless}} 
-  {{/each}}
-</ol>
+    <ol>
+      {{#each burgers}} 
+      {{#unless devoured}} 
+        {{> burgers/burger-block devoured=true}} 
+      {{/unless}} 
+      {{/each}}
+    </ol>
 </div>
-  <div class="col-6">
-{{!-- <div id="eaten"> --}}
-  <h2>Devoured Burgers:</h2>
 
+<div id="eaten">
+  <h2>Devoured Burgers:</h2>
   <ol>
     {{#each burgers}} 
     {{#if devoured}}
     <li>
       {{burger_name}} 
-     </li>
+    </li>
     {{/if}}
-     {{/each}}
+    {{/each}}
   </ol>
 </div>
-</div>
-  </div>
+
 
 <script type="text/javascript">
-  // // Make sure we wait to attach our handlers until the DOM is fully loaded.
+ //Click event to change devoured to true and move to right side of screen
   $(function () {
     $(".change-devoured").on("click", function (event) {
       var id = $(this).data("id");
@@ -53,8 +48,9 @@
       );
     });
 
+//Click event to submit the new burger with devoured = false to the left side of screen
     $(".create-form").on("submit", function (event) {
-      //       // Make sure to preventDefault on a submit event.
+  
       event.preventDefault();
 
       var newBurger = {
@@ -69,7 +65,6 @@
       }).then(
         function () {
           console.log("created new burger");
-          // Reload the page to get the updated list
           location.reload();
         }
       );
